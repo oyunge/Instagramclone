@@ -18,6 +18,13 @@ class LoginPage extends Component {
             isLogin:true
         }
     }
+    //changing the login and signin when clicked
+    changeLogin = () => {
+        if (this.state.isLogin)
+            this.setState({ isLogin: false });
+        else
+            this.setState({ isLogin: true });
+    }
     render() {
         return (
             <div >
